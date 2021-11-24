@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('../fonts/HelveticaNowDisplay-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('../fonts/HelveticaNowDisplay-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('../fonts/HelveticaNowDisplay-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
+}
+
+@layer components {
+  @responsive {
+    .title-one {
+      @apply font-poppins font-semibold text-3xl;
+    }
+    .title-two {
+      @apply font-poppins font-bold text-45px leading-50px;
+    }
+    .title-three {
+      @apply font-poppins font-extralight text-55px leading-50px;
+    }
+    .subtitle {
+      @apply font-helvetica-now-display font-bold text-2xl leading-30px;
+    }
+    .highlighted {
+      @apply font-helvetica-now-display font-medium text-lg leading-24px;
+    }
+    .regular {
+      @apply font-helvetica-now-display text-15px leading-24px;
+    }
+    .buttons {
+      @apply font-helvetica-now-display font-bold text-15px;
+    }
+  }
+}
