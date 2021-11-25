@@ -25,8 +25,54 @@
   src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
 }
 
+@font-face {
+  font-family: 'Gobold Hollow Bold';
+  src: url('../fonts/GoboldHollowBold.otf');
+}
+
+@font-face {
+  font-family: 'Gobold';
+  src: url('../fonts/GoboldRegular.otf');
+}
+
+@font-face {
+  font-family: 'Gobold Hollow';
+  src: url('../fonts/GoboldHollow.otf');
+}
+
+@font-face {
+  font-family: 'Gobold Bold';
+  src: url('../fonts/GoboldBold.otf');
+}
+
+@font-face {
+  font-family: 'Gobold High';
+  src: url('../fonts/GoboldHigh.otf');
+}
+
 @layer components {
   @responsive {
+    .d-title-hollow {
+      @apply font-gobold-hollow-bold text-168px leading-223px;
+    }
+    .d-title {
+      @apply font-gobold text-50px leading-70px;
+    }
+    .d-subtitle-hollow {
+      @apply font-gobold-hollow text-100px leading-112px;
+    }
+    .d-subtitle {
+      @apply font-gobold-bold text-120px leading-132px;
+    }
+    .d-buttons {
+      @apply font-helvetica-now-display font-bold text-lg leading-18px;
+    }
+    .m-title {
+      @apply font-gobold-bold text-55px leading-65px;
+    }
+    .m-title-high {
+      @apply font-gobold-high text-55px leading-65px;
+    }
     .title-one {
       @apply font-poppins font-semibold text-3xl;
     }
