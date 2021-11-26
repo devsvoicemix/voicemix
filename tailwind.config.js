@@ -51,6 +51,19 @@ module.exports = {
         '132px': '8.25rem',
         '223px': '13.9375rem',
       },
+      maxWidth: {
+        '1140px': '1140px',
+      },
+      width: {
+        fit: 'fit-content',
+      },
+      height: {
+        fit: 'fit-content',
+      },
+      backgroundImage: {
+        'gradient-hero':
+          'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+      },
     },
   },
   variants: {

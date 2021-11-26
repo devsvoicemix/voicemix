@@ -96,3 +96,9 @@
     }
   }
 }
+
+@layer base {
+  body {
+    @apply regular selection:bg-safety-orange/25;
+  }
+}
