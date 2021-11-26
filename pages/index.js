@@ -89,23 +89,29 @@ export default function Home() {
             layout='responsive'
           />
         </div>
-        <div className='px-8 mx-auto mt-5 mb-8 max-w-1140px lg:px-[3.75rem] flex lg:justify-end'>
-          <Link href='/' passHref>
-            <a className='cursor-pointer hover:bg-blue/90 transition-all duration-300 rounded bg-blue w-full lg:w-fit lg:px-5  text-center buttons text-white py-3 lg:py-4 flex gap-3 justify-center'>
-              Buy an ‘original’
-              <Image src={arrowWhite} width={7} height={11} />
-            </a>
-          </Link>
-        </div>
-        <div className='highlighted px-8 mx-auto max-w-1140px lg:px-[3.75rem] flex flex-col'>
-          <span className='mb-5 border-t border-platinum pt-5 block'>
-            We have documentated all the creation process of these first
-            “Originals” NFTs to be transparent with everyone.
-          </span>
+        <div className='flex flex-col lg:flex-col-reverse '>
+          <div className='px-8 mx-auto mt-5 mb-8 max-w-1140px lg:px-[3.75rem] w-full flex lg:justify-end'>
+            <Link href='/' passHref>
+              <a className='cursor-pointer hover:bg-blue/90 transition-all duration-300 rounded bg-blue w-full lg:w-fit lg:px-5  text-center buttons text-white py-3 lg:py-4 flex gap-3 justify-center'>
+                Buy an ‘original’
+                <Image src={arrowWhite} width={7} height={11} />
+              </a>
+            </Link>
+          </div>
+          <div className='highlighted px-8 mx-auto max-w-1140px lg:px-[3.75rem] flex flex-col w-full lg:mt-5 lg:before:block lg:before:h-full lg:before:w-[1px] lg:before:bg-platinum '>
+            <span className='mb-5 lg:mb-0 lg:pb-5 border-t border-platinum pt-5 block lg:border lg:rounded lg:px-4'>
+              We have documentated all the creation process of these first
+              “Originals” NFTs to be transparent with everyone.
+              <span className='hidden lg:inline buttons cursor-pointer'>
+                {' '}
+                Read more <Image src={arrowBlack} width={7} height={11} />
+              </span>
+            </span>
 
-          <button className='border-b border-platinum buttons pb-5 flex justify-end lg:justify-start items-center gap-2 w-full '>
-            Read more <Image src={arrowBlack} width={7} height={11} />
-          </button>
+            <button className='lg:hidden border-b border-platinum buttons pb-5 flex justify-end lg:justify-start items-center gap-2 w-full '>
+              Read more <Image src={arrowBlack} width={7} height={11} />
+            </button>
+          </div>
         </div>
       </section>
       <section className='mt-[6.25rem]'>
