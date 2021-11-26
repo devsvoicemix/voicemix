@@ -99,6 +99,11 @@
 
 @layer base {
   body {
-    @apply regular selection:bg-safety-orange/25;
+    @apply regular selection:bg-safety-orange/25 text-black-vmx;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
   }
 }

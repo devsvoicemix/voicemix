@@ -31,10 +31,11 @@ const Navbar = () => {
   return (
     <nav
       className={`${
-        !scrolling && '-translate-y-20'
-      } fixed top-0 z-40  w-full transform transition-transform ease-in-out duration-300 delay-500 `}
+        !scrolling && 'translate-y-[-139px]'
+      } absolute top-0 z-40  w-full transition-transform ease-in-out duration-300 delay-500`}
     >
-      <div className='flex mx-auto max-w-1140px justify-between items-center p-8  lg:p-[3.75rem]'>
+      {/* Change absolute for fixed when background is ready  */}
+      <div className='flex mx-auto max-w-1140px justify-between items-center p-8  lg:p-[3.75rem] '>
         {/* <Link href='/'> */}
         <Image src={logo} height={19} width={120} />
         {/* </Link> */}

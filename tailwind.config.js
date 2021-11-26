@@ -9,7 +9,7 @@ module.exports = {
         silver: '#C0C0C0',
         platinum: '#EBEBEB',
         blue: '#574AE2',
-        'safety-orange': '#FF6700',
+        'safety-orange': '#FB6500',
       },
       fontFamily: {
         'helvetica-now-display': ['Helvetica Now Display', 'sans-serif'],
@@ -63,6 +63,9 @@ module.exports = {
       backgroundImage: {
         'gradient-hero':
           'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+      },
+      animation: {
+        'spin-slow': 'spin 60s linear infinite',
       },
     },
   },

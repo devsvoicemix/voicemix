@@ -6,10 +6,13 @@ import gridTwo from '../public/images/grid-two.png';
 import gridThree from '../public/images/grid-three.png';
 import gridFour from '../public/images/grid-four.png';
 import arrowWhite from '../public/icons/arrow-white.svg';
-import arrowSilver from '../public/icons/arrow-silver.svg';
+import arrowBlack from '../public/icons/arrow-black.svg';
 import arrowPurple from '../public/icons/arrow-purple.svg';
 import twitter from '../public/icons/twitter.svg';
 import discord from '../public/icons/discord.svg';
+import stepOne from '../public/assets/step-one.svg';
+import stepTwo from '../public/assets/step-two.svg';
+import stepThree from '../public/assets/step-three.svg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -23,7 +26,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <section className='h-screen relative flex items-end bg-gradient-hero'>
-        <div className='max-w-1140px mx-auto w-full p-8 lg:p-[3.75rem] font-gobold-bold uppercase'>
+        <div className='max-w-[375px] lg:max-w-1140px lg:mx-auto flex flex-col w-full p-8 lg:p-[3.75rem] font-gobold-bold uppercase'>
           <h1 className='text-white text-[40px] leading-[58px] lg:d-title'>
             Let’s perpetuate the voices and <br /> messages that brought us here
           </h1>
@@ -44,8 +47,14 @@ export default function Home() {
         </video>
       </section>
       <section className='mt-[3rem]'>
-        <div className='max-w-1140px mx-auto w-full p-8 lg:pt-[3.75rem] lg:px-[3.75rem] lg:flex lg:justify-between'>
-          <h2 className='text-safety-orange uppercase mb-8 lg:mb-0'>
+        <div className='max-w-1140px mx-auto w-full p-8 lg:pt-[3.75rem] lg:px-[3.75rem] lg:flex lg:justify-between relative'>
+          <div className='absolute top-0 mt-8 right-0 mr-8 lg:hidden animate-spin-slow'>
+            <Image src={stepOne} alt='step one' width={75} height={75} />
+          </div>
+          <div className='absolute bottom-0 mb-8 left-[25rem] hidden lg:block animate-spin-slow'>
+            <Image src={stepOne} alt='step one lg' width={125} height={125} />
+          </div>
+          <h2 className='text-safety-orange uppercase mb-5 lg:mb-0'>
             <span className='m-title-high lg:d-subtitle-hollow'>
               We are Raising
             </span>
@@ -82,25 +91,31 @@ export default function Home() {
         </div>
         <div className='px-8 mx-auto mt-5 mb-8 max-w-1140px lg:px-[3.75rem] flex lg:justify-end'>
           <Link href='/' passHref>
-            <a className='cursor-pointer rounded bg-blue w-full lg:w-fit lg:px-5  text-center buttons text-white py-3 lg:py-4 flex gap-3 justify-center'>
+            <a className='cursor-pointer hover:bg-blue/90 transition-all duration-300 rounded bg-blue w-full lg:w-fit lg:px-5  text-center buttons text-white py-3 lg:py-4 flex gap-3 justify-center'>
               Buy an ‘original’
               <Image src={arrowWhite} width={7} height={11} />
             </a>
           </Link>
         </div>
-        <div className='lg:hidden highlighted text-silver w-full px-8'>
-          <span className='mb-5 block'>
+        <div className='highlighted px-8 mx-auto max-w-1140px lg:px-[3.75rem] flex flex-col'>
+          <span className='mb-5 border-t border-platinum pt-5 block'>
             We have documentated all the creation process of these first
             “Originals” NFTs to be transparent with everyone.
           </span>
 
-          <button className='flex justify-end items-center gap-2 w-full'>
-            Read more <Image src={arrowSilver} width={7} height={11} />
+          <button className='border-b border-platinum buttons pb-5 flex justify-end lg:justify-start items-center gap-2 w-full '>
+            Read more <Image src={arrowBlack} width={7} height={11} />
           </button>
         </div>
       </section>
       <section className='mt-[6.25rem]'>
-        <div className='max-w-1140px mx-auto w-full p-8 lg:pt-[3.75rem] lg:px-[3.75rem] lg:flex lg:justify-between'>
+        <div className='max-w-1140px mx-auto w-full p-8 lg:pt-[3.75rem] lg:px-[3.75rem] lg:flex lg:justify-between relative'>
+          <div className='absolute top-0 mt-3 right-0 mr-8 lg:hidden animate-spin-slow'>
+            <Image src={stepTwo} alt='step two' width={75} height={75} />
+          </div>
+          <div className='absolute top-0 mt-[3.75rem] left-[37rem] hidden lg:block animate-spin-slow'>
+            <Image src={stepTwo} alt='step two lg' width={125} height={125} />
+          </div>
           <h2 className='text-safety-orange uppercase mb-5 lg:mb-0'>
             <span className='m-title-high lg:d-subtitle-hollow'>Let’s</span>{' '}
             <br />
@@ -120,7 +135,18 @@ export default function Home() {
         </div>
       </section>
       <section className='mt-[6.25rem]'>
-        <div className='max-w-1140px mx-auto w-full p-8 lg:pt-[3.75rem] lg:px-[3.75rem] lg:flex lg:justify-between'>
+        <div className='max-w-1140px mx-auto w-full p-8 lg:pt-[3.75rem] lg:px-[3.75rem] lg:flex lg:justify-between relative'>
+          <div className='absolute top-0 right-0 mr-8 lg:hidden animate-spin-slow'>
+            <Image src={stepThree} alt='step three' width={75} height={75} />
+          </div>
+          <div className='absolute top-0 mt-[3.75rem] left-[34rem] hidden lg:block animate-spin-slow'>
+            <Image
+              src={stepThree}
+              alt='step three lg'
+              width={125}
+              height={125}
+            />
+          </div>
           <h2 className='text-safety-orange uppercase mb-5 lg:mb-0'>
             <span className='m-title-high lg:d-subtitle-hollow'>go Mint</span>{' '}
             <br />
